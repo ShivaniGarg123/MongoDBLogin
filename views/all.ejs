@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: rosybrown">
+<div class="container">
+    <i><h1>Information Area</h1></i>
+    <form action="/all" method="POST">
+        <button type="submit">All Info</button>
+        <% for( var i = 0; i < read.length; i++){ %>
+            <li><%= read[i] %> </li>
+        <% } %>
+    </form>
+</div>
+</body>
+</html>

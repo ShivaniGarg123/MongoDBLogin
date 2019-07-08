@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: rosybrown">
+<div class="container">
+<i><h1>Login Page</h1></i>
+<form action="/login" method="POST">
+<input type="text" placeholder="Enter registered name" name="name">
+<button formaction="/login" type="submit">Login</button>
+    <% for( var i = 0; i < info2.length; i++){ %>
+        <li><%= info2[i] %> </li>
+    <% } %>
+</form>
+</div>
+</body>
+</html>

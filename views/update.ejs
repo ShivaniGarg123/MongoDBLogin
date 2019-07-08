@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: rosybrown">
+<div class="container">
+    <i><h1>Updation Area</h1></i>
+    <form action="/updation" method="POST">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="Name" placeholder="Enter your new name">
+        <button type="submit">Update Info</button>
+        <% for( var i = 0; i < update.length; i++){ %>
+            <li><%= update[i] %> </li>
+        <% } %>
+    </form>
+</div>
+</body>
+</html>

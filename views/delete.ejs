@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: rosybrown">
+<div class="container">
+    <i><h1>Deletion Area</h1></i>
+    <form action="/deletion" method="POST">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="submit">Delete Info</button>
+        <% for( var i = 0; i < del.length; i++){ %>
+            <li><%= del[i] %> </li>
+        <% } %>
+    </form>
+</div>
+</body>
+</html>
